@@ -136,7 +136,8 @@ h2 {
 }
 
 .card {
-    background: rgba(30, 41, 59, 0.7);
+    background: #0f172a;
+    color: white;
     padding: 25px;
     border-radius: 15px;
     transition: 0.3s;
@@ -144,12 +145,17 @@ h2 {
 }
 
 .card:hover {
-    transform: translateY(-10px) scale(1.02);
-    background: rgba(51, 65, 85, 0.9);
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 25px rgba(56,189,248,0.2);
 }
 
 .card ul {
     margin-top: 10px;
+}
+
+.card h3{
+    color: #38bdf8;
 }
 
 .card li {
