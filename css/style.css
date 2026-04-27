@@ -424,11 +424,10 @@ section:nth-child(4) { animation-delay: 0.6s; }
 
 #certifications {
     padding: 80px 20px;
-    text-align: center;
 }
 
 #certifications h2 {
-    font-size: 32px;
+    font-size: 25px;
     margin-bottom: 40px;
 }
 
@@ -459,11 +458,10 @@ section:nth-child(4) { animation-delay: 0.6s; }
 }
 #experience {
     padding: 80px 20px;
-    text-align: center;
 }
 
 #experience h2 {
-    font-size: 32px;
+    font-size: 25px;
     margin-bottom: 40px;
 }
 
