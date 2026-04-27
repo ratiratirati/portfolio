@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rati | Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo" onclick="scrollToTop()">Rati.dev</div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#" onclick="scrollToTop(); toggleMenu()">მთავარი</a>
+        <a href="#about" onclick="toggleMenu()">ჩემს შესახებ</a>
+        <a href="#skills" onclick="toggleMenu()">უნარები</a>
+        <a href="#contact" onclick="toggleMenu()">კონტაქტი</a>
+    </div>
+
+    <ul>
+        <li><a href="#" onclick="scrollToTop()" data-ka="მთავარი" data-en="Home">მთავარი</a></li>
+        <li><a href="#about" data-ka="ჩემს შესახებ" data-en="About Me">ჩემს შესახებ</a></li>
+        <li><a href="#skills" data-ka="უნარები" data-en="Skills">უნარები</a></li>
+        <li><a href="#contact" data-ka="კონტაქტი" data-en="Contact">კონტაქტი</a></li>
+    </ul>
+
+    <div class="lang-switch">
+        <button onclick="setLang('ka')">ქართული</button>
+        <button onclick="setLang('en')">English</button>
+        <button class="theme-btn" onclick="toggleTheme()"><span id="theme-icon">🌙</span></button>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+        ☰
+    </div>
+</nav>
+
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="photo-wrapper">
+            <img src="img/rati.jpg" alt="Rati">
+        </div>
+
+        <h1 data-ka="რატი ჯიქია" data-en="Rati Jikia">რატი ჯიქია</h1>
+
+        <p class="typing">
+            <span id="typed-text" data-ka="ვებ დეველოპერი & ქსელები და სისტემები" data-en="Web Developer & Networking & Systems"></span>
+        </p>
+
+        <div class="hero-social">
+
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+
+        </div>
+
+    </div>
+
+</header>
+
+<section id="about">
+
+    <h2 data-ka="👨‍💻 ჩემ შესახებ" data-en="👨‍💻 About Me">👨‍💻 ჩემ შესახებ</h2>
+
+    <p data-ka="მე ვარ რატი — IT სფეროთი დაინტერესებული დეველოპერი, რომელიც მუშაობს როგორც ვებ-პროგრამირებაზე, ასევე ქსელურ სისტემებსა და ინფრასტრუქტურაზე."
+       data-en="I'm Rati — a developer interested in the IT field, working on both web programming and network systems and infrastructure.">
+    </p>
+
+    <p data-ka="ვსწავლობ და ვიყენებ HTML, CSS, PHP, PYTHON, JavaScript, MySQL და WordPress-ს ვებ-პროექტების შესაქმნელად. მაქვს პრაქტიკული გამოცდილება ქსელურ ადმინისტრირებაში, IP მოწყობილობებთან მუშაობაში და სისტემების გამართვაში."
+       data-en="
+I study and use HTML, CSS, PHP, PYTHON, JavaScript, MySQL and WordPress to create web projects. I have practical experience in network administration, working with IP devices, and system maintenance.">
+    </p>
+
+    <p data-ka="ასევე ვმუშაობ ქსელების კონფიგურაციასა და პრობლემების დიაგნოსტიკაზე, მათ შორის კამერების და კომპიუტერული სისტემების მხარდაჭერაზე."
+       data-en="I also work on network configuration and troubleshooting, including supporting cameras and computer systems.">
+    </p>
+
+    <p class="highlight"
+       data-ka="ჩემი მიზანია გავაერთიანო პროგრამირება და სისტემური ცოდნა, რათა შევქმნა სტაბილური, უსაფრთხო და ეფექტური IT გადაწყვეტილებები რეალური ბიზნესებისთვის."
+       data-en="My goal is to combine programming and systems knowledge to create stable, secure, and efficient IT solutions for real businesses.">
+    </p>
+
+</section>
+
+<section id="skills">
+
+    <h2 data-ka="💻 რას ვაკეთებ" data-en="💻 What I Do">💻 რას ვაკეთებ</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3 data-ka="ვებ-დეველოპმენტი" data-en="Web Development">ვებ-დეველოპმენტი</h3>
+            <ul>
+                <li>✔️ PHP, HTML, CSS, WordPress</li>
+                <li>✔️ CRUD Panels</li>
+                <li>✔️ MySQL Database</li>
+                <li>✔️ API Integration</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 data-ka="ქსელები და სისტემები" data-en="Networks & Systems">ქსელები და სისტემები</h3>
+            <ul>
+                <li>✔️ IP Cameras</li>
+                <li>✔️ Network Setup</li>
+                <li>✔️ LAN / WAN</li>
+                <li>✔️ Troubleshooting</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 data-ka="დამატებითი" data-en="Additional Skills">დამატებითი</h3>
+            <ul>
+                <li>✔️ Arduino / ESP8266</li>
+                <li>✔️ Automation Systems</li>
+                <li>✔️ Optimization</li>
+                <li>✔️ Problem Solving</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2 data-ka="📩 კონტაქტი" data-en="📩 Contact">📩 კონტაქტი</h2>
+
+    <p data-ka="მეილი: ratijikia@itvet.ge" data-en="Email: ratijikia@itvet.ge"></p>
+
+</section>
+
+<footer>
+    <p data-ka="© 2026 რატი | პორტფოლიო" data-en="© 2026 Rati | Portfolio"></p>
+</footer>
+
+<button id="topBtn" onclick="scrollToTop()">↑</button>
+
+</body>
+</html>
