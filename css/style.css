@@ -167,6 +167,7 @@ h2 {
 #contact {
     text-align: center;
     padding: 100px 20px;
+    color: white;
 }
 
 #contact-card {
@@ -200,6 +201,7 @@ footer {
     text-align: center;
     padding: 30px;
     background: #020617;
+    color: white;
 }
 
 section {
@@ -235,7 +237,6 @@ section:nth-child(4) { animation-delay: 0.6s; }
     right: 25px;
     width: 55px;
     height: 55px;
-    border-radius: 50%;
     border: none;
     background: #38bdf8;
     color: white;
@@ -418,6 +419,12 @@ section:nth-child(4) { animation-delay: 0.6s; }
     right: 0;
 }
 
+#close_button {
+    position: absolute;
+    top: 15px;
+    right: 25px; /* ეს გაწევს მარჯვნივ */
+}
+
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -444,6 +451,7 @@ section:nth-child(4) { animation-delay: 0.6s; }
 }
 
 .cert-card {
+    text-align: center;
     background: #0f172a;
     border: 1px solid rgba(255,255,255,0.1);
     padding: 20px;
@@ -478,13 +486,17 @@ section:nth-child(4) { animation-delay: 0.6s; }
 }
 
 .exp-card {
+    text-align: center;
     background: #0f172a;
     border: 1px solid rgba(255,255,255,0.1);
     border-radius: 15px;
     padding: 25px;
-    text-align: left;
     transition: 0.3s;
     color: white;
+}
+
+.exp-card p{
+    margin-top: 1%;
 }
 
 .exp-card:hover {
@@ -507,4 +519,24 @@ section:nth-child(4) { animation-delay: 0.6s; }
     font-size: 13px;
     opacity: 0.6;
     margin-bottom: 10px;
+}
+
+.edu-card{
+    text-align: center;
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.3s;
+    color: white;
+}
+
+.edu-card p{
+    margin-top: 1%;
+}
+
+.edu-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 25px rgba(56,189,248,0.2);
 }
