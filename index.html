@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/rati.jpg">
     <title>Rati | Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="icon" type="image/png" href="img/6062646.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="script.js"></script>
 </head>
@@ -15,17 +17,17 @@
     <div class="logo" onclick="scrollToTop()">Rati.dev</div>
     <div class="mobile-menu" id="mobileMenu">
         <div class="menu-icon" id="close_button" onclick="toggleMenu()">✖</div>
-        <a href="#" onclick="scrollToTop(); toggleMenu()">მთავარი</a>
-        <a href="#about" onclick="toggleMenu()">ჩემს შესახებ</a>
-        <a href="#skills" onclick="toggleMenu()">უნარები</a>
-        <a href="#contact" onclick="toggleMenu()">კონტაქტი</a>
+        <a href="#" onclick="scrollToTop(); toggleMenu()" data-ka="მთავარი" data-en="Home">მთავარი</a>
+        <a href="#about" onclick="toggleMenu()" data-ka="ჩემს შესახებ" data-en="About Me">ჩემს შესახებ</a>
+        <a href="#skills" onclick="toggleMenu()" data-ka="უნარები" data-en="Skills">უნარები</a>
+        <a href="#contact" onclick="toggleMenu()" data-ka="კონტაქტი" data-en="Contact">კონტაქტი</a>
     </div>
 
     <ul>
-        <li><a href="#" onclick="scrollToTop()">მთავარი</a></li>
-        <li><a href="#about">ჩემს შესახებ</a></li>
-        <li><a href="#skills">უნარები</a></li>
-        <li><a href="#contact">კონტაქტი</a></li>
+        <li><a href="#" onclick="scrollToTop()" data-ka="მთავარი" data-en="Home">მთავარი</a></li>
+        <li><a href="#about" data-ka="ჩემს შესახებ" data-en="About Me">ჩემს შესახებ</a></li>
+        <li><a href="#skills" data-ka="უნარები" data-en="Skills">უნარები</a></li>
+        <li><a href="#contact" data-ka="კონტაქტი" data-en="Contact">კონტაქტი</a></li>
     </ul>
 
     <div class="lang-switch">
