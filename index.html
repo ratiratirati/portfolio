@@ -11,10 +11,10 @@
 </head>
 <body>
 
-    <nav>
-        <div class="logo" onclick="scrollToTop()">Rati.dev</div>
-
+<nav>
+    <div class="logo" onclick="scrollToTop()">Rati.dev</div>
     <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-icon" id="close_button" onclick="toggleMenu()">✖</div>
         <a href="#" onclick="scrollToTop(); toggleMenu()">მთავარი</a>
         <a href="#about" onclick="toggleMenu()">ჩემს შესახებ</a>
         <a href="#skills" onclick="toggleMenu()">უნარები</a>
@@ -22,20 +22,20 @@
     </div>
 
     <ul>
-        <li><a href="#" onclick="scrollToTop()" data-ka="მთავარი" data-en="Home">მთავარი</a></li>
-        <li><a href="#about" data-ka="ჩემს შესახებ" data-en="About Me">ჩემს შესახებ</a></li>
-        <li><a href="#skills" data-ka="უნარები" data-en="Skills">უნარები</a></li>
-        <li><a href="#contact" data-ka="კონტაქტი" data-en="Contact">კონტაქტი</a></li>
+        <li><a href="#" onclick="scrollToTop()">მთავარი</a></li>
+        <li><a href="#about">ჩემს შესახებ</a></li>
+        <li><a href="#skills">უნარები</a></li>
+        <li><a href="#contact">კონტაქტი</a></li>
     </ul>
 
     <div class="lang-switch">
         <button onclick="setLang('ka')">ქართული</button>
         <button onclick="setLang('en')">English</button>
-        <button class="theme-btn" onclick="toggleTheme()"><span id="theme-icon">🌙</span></button>
+        <button class="theme-btn" onclick="toggleTheme()">
+            <span id="theme-icon">🌙</span>
+        </button>
     </div>
-   <div class="menu-icon" onclick="toggleMenu()">
-    <span id="menuIcon">☰</span>
-    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
 </nav>
 
 
@@ -67,11 +67,12 @@
 
 </header>
 
+
 <section id="about">
 
     <h2 data-ka="👨‍💻 ჩემ შესახებ" data-en="👨‍💻 About Me">👨‍💻 ჩემ შესახებ</h2>
 
-    <p data-ka="მე ვარ რატი — IT სფეროთი დაინტერესებული დეველოპერი, რომელიც მუშაობს როგორც ვებ-პროგრამირებაზე, ასევე ქსელურ სისტემებსა და ინფრასტრუქტურაზე."
+    <p data-ka="მე ვარ რატი 26 წლის — IT სფეროთი დაინტერესებული დეველოპერი, რომელიც მუშაობს როგორც ვებ-პროგრამირებაზე, ასევე ქსელურ სისტემებსა და ინფრასტრუქტურაზე."
        data-en="I'm Rati — a developer interested in the IT field, working on both web programming and network systems and infrastructure.">
     </p>
 
@@ -105,13 +106,6 @@ I study and use HTML, CSS, PHP, PYTHON, JavaScript, MySQL and WordPress to creat
 
         <span>2019 - 2021</span>
         <p class="location" data-ka="თბილისი" data-en="Tbilisi"></p>
-        <p data-ka="სწავლა მოიცავდა ქსელების საფუძვლებს, სისტემურ ადმინისტრირებას,
-            IP მოწყობილობებთან მუშაობას, Cisco ქსელურ ტექნოლოგიებს და
-            Windows Server გარემოს მართვას." 
-            data-en="
-The training included networking fundamentals, system administration, working with IP devices, Cisco networking technologies, and managing a Windows Server environment.">      
-        </p>
-
     </div>
 
 </section>
@@ -177,32 +171,32 @@ The training included networking fundamentals, system administration, working wi
 
         <div class="cert-card">
             <h3>CCNA v7</h3>
-            <p>Introduction to Networks</p>
+            <p data-ka="შესავალი ქსელებში" data-en="Introduction to Networks"></p>
         </div>
 
         <div class="cert-card">
             <h3>CCNA v7</h3>
-            <p>Switching, Routing & Wireless Essentials</p>
+            <p data-ka="კომუტაციის, მარშრუტიზაციისა და უსადენო ქსელის აუცილებელი ელემენტები" data-en="Switching, Routing & Wireless Essentials"></p>
         </div>
 
         <div class="cert-card">
             <h3>CCNA v7</h3>
-            <p>Enterprise Networking, Security & Automation</p>
+            <p data-ka="საწარმოს ქსელები, უსაფრთხოება და ავტომატიზაცია" data-en="Enterprise Networking, Security & Automation"></p>
         </div>
 
         <div class="cert-card">
             <h3>IT Essentials</h3>
-            <p>PC Hardware & Software</p>
+            <p data-ka="კომპიუტერის აპარატურა და პროგრამული უზრუნველყოფა" data-en="PC Hardware & Software"></p>
         </div>
 
         <div class="cert-card">
             <h3>NDG Linux</h3>
-            <p>Linux Essentials (Partner)</p>
+            <p data-ka="ლინუქს ესენშიალი (პარტნიორი)" data-en="Linux Essentials (Partner)"></p>
         </div>
 
         <div class="cert-card">
             <h3>Cyber Security</h3>
-            <p>Fundamentals of Cyber Security</p>
+            <p data-ka="კიბერუსაფრთხოების საფუძვლები" data-en="Fundamentals of Cyber Security"></p>
         </div>
 
     </div>
@@ -218,7 +212,7 @@ The training included networking fundamentals, system administration, working wi
         <div class="card">
             <h3 data-ka="ვებ-დეველოპმენტი" data-en="Web Development">ვებ-დეველოპმენტი</h3>
             <ul>
-                <li>✔️ PHP, HTML, CSS, WordPress</li>
+                <li>✔️ HTML, CSS, PHP, JAVASCRIPT, PYTHON, MYSQLI, WordPress</li>
                 <li>✔️ CRUD Panels</li>
                 <li>✔️ MySQL Database</li>
                 <li>✔️ API Integration</li>
@@ -249,15 +243,16 @@ The training included networking fundamentals, system administration, working wi
 
 </section>
 
-<section id="contact">
+
+
+<footer>
+    <section id="contact">
 
     <h2 data-ka="📩 კონტაქტი" data-en="📩 Contact">📩 კონტაქტი</h2>
 
     <p data-ka="მეილი: ratijikia@itvet.ge" data-en="Email: ratijikia@itvet.ge"></p>
 
-</section>
-
-<footer>
+    </section>
     <p data-ka="© 2026 რატი | პორტფოლიო" data-en="© 2026 Rati | Portfolio"></p>
 </footer>
 
