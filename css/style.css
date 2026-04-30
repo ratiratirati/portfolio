@@ -37,6 +37,11 @@ nav {
     opacity: 0.9;
 }
 
+.lang-switch img{
+    width: 30px;
+    padding-top: 5px;
+}
+
 .logo {
     font-size: 20px;
     font-weight: bold;
